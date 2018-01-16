@@ -53,7 +53,7 @@ function findSign() {
 	// store the user's input as the zodiac name to be used in the condition
 	var userdata = document.getElementById("userdata");
 
-	// confirms that the 'onclick' is working in our button with the users input
+	// confirms that the 'onclick' is working in the button with the users input
 	console.log("users value is: " + userdata.value);
 
 	// loop through zodiac array one item at a time
@@ -72,12 +72,12 @@ function findSign() {
 			console.log("users typed in: " + userdata.value);
 			console.log("current image value is: " + zodiac[i].image);
 
-			// get element with id="userSign" and change the text to the user input in ALL CAPS
+			// get element with id="userSign" and change the text to the user input in all caps
 			document.getElementById("userSign").textContent = userdata.value.toUpperCase();
-			// get element with id="icon" and change source attribute to current zodiac image path
+			// get element with id="symbol" and change source attribute to current zodiac image path
 			document.getElementById("symbol").src = zodiac[i].image;
 			
-			// stop the function because we found a match!!! ~ Could this send a browser into an infinite loop? Is it worth finding out? Delete at your own risk.
+			// stop the function ~ Could this send a browser into an infinite loop? Is it worth finding out? Delete at your own risk.
 			return;
 		};
 
