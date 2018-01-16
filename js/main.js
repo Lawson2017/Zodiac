@@ -49,7 +49,7 @@ var zodiac = [
 	}
 ];
 
-function horoscope() {
+function findSign() {
 	// store the user's input as the zodiac name to be used in the condition
 	var userdata = document.getElementById("userdata");
 
@@ -85,7 +85,7 @@ function horoscope() {
 		console.log("no matches were found, user failed to type in a correct zodiac sign");
 
 		// what to display in the event above
-		document.getElementById("userSign").textContent = "Not one of the signs. Try again!";
+		document.getElementById("userSign").textContent = "Not a Zodiac sign. Think now and try again!";
 		document.getElementById("symbol").src = "";
 	};
 }
