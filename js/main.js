@@ -73,7 +73,7 @@ function horoscope() {
 			console.log("current image value is: " + zodiac[i].image);
 
 			// get element with id="userSign" and change the text to the user input in ALL CAPS
-			document.getElementById("yourSign").textContent = userdata.value.toUpperCase();
+			document.getElementById("userSign").textContent = userdata.value.toUpperCase();
 			// get element with id="icon" and change source attribute to current zodiac image path
 			document.getElementById("symbol").src = zodiac[i].image;
 			
@@ -85,7 +85,7 @@ function horoscope() {
 		console.log("no matches were found, user failed to type in a correct zodiac sign");
 
 		// what to display in the event above
-		document.getElementById("yourSign").textContent = "Not one of the signs. Try again!";
+		document.getElementById("userSign").textContent = "Not one of the signs. Try again!";
 		document.getElementById("symbol").src = "";
 	};
 }
